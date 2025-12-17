@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RAFAEL INSTN — Streetwear Premium</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">RAFAEL INSTN</div>
+    <button id="menu-btn" class="menu-btn" aria-label="Abrir menu" aria-expanded="false">
+      <span class="bar bar1"></span>
+      <span class="bar bar2"></span>
+      <span class="bar bar3"></span>
+    </button>
+  </header>
+
+  <nav id="side-menu" class="side-menu" aria-hidden="true">
+    <div class="side-menu-inner">
+      <ul class="brands">
+        <li><button class="brand-btn" data-brand="NIKE">NIKE</button></li>
+        <li><button class="brand-btn" data-brand="ADIDAS">ADIDAS</button></li>
+        <li><button class="brand-btn" data-brand="PUMA">PUMA</button></li>
+        <li><button class="brand-btn" data-brand="ASICS">ASICS</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-left">
+        <h1 class="headline">Step into the <span class="accent">Future</span> of movement</h1>
+        <p class="subtitle">Design premium. Performance urbana. Edição limitada.</p>
+        <div class="hero-ctas">
+          <button class="btn primary" id="shop-now">Comprar agora</button>
+          <button class="btn ghost" id="explore">Explorar</button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="sneaker-wrap">
+          <!-- Inline SVG sneaker for demo -->
+          <img src="assets/sneaker-1.svg" alt="Tênis destaque" class="sneaker sneaker-main" />
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <h2 class="section-title">Destaques</h2>
+      <div id="products-grid" class="products-grid" aria-live="polite">
+        <!-- Products rendered by script.js from products.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> RAFAEL INSTN — All rights reserved</p>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
